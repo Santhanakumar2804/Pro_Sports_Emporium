@@ -1,0 +1,54 @@
+.navbar {
+    height: 3rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    padding: 10px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 1000;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar li {
+    margin: 2px;
+    transition: border-bottom 0.3s;
+  }
+  
+  /* .navbar li:hover {
+    background-color: #546567;
+    border-radius: 10px;
+    border-bottom: 2px solid #fff;
+  } */
+  
+  .navbar li.active {
+    background-color: #546567;
+    border-bottom: 2px solid #fff;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    font-size: medium;
+  }
+  
+  li {
+    cursor: pointer;
+    height: 20px;
+  }
+  /* Navbar.css */
+
+.dashboard-icon {
+  font-size: 24px; /* Adjust the font size as needed */
+}

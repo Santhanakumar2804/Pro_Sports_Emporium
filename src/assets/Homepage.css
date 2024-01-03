@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #394240;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  width: 100px;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.overlay {
+  padding: 16px;
+  background: rgba(108, 12, 12, 0.5);
+  width: 100%;
+  text-align: left;
+}
+
+.home p {
+  text-align: justify;
+  margin-top: 5rem;
+}
+
+.flip-3d {
+  background-color: rgba(121, 174, 195, 0.918);
+  height: 25rem;
+}
+
+.home.background {
+  background-clip: "c:\Users\santh\Downloads\hd0038.mov";
+  background-position: 30%;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-inline-start: 10%;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 50vh;
+}
+
+.h4 {
+  text-align: center;
+}
+
+.img1 {
+  height: 200%;
+  width: 70%;
+  margin-top: 10rem;
+  align-self: flex-end;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.home.body {
+  font-family: 'Avenir', Arial, sans-serif;
+  margin: 2%;
+}
+
+div.flip-3d {
+  perspective: 1200px;
+  width: 28%;
+  display: inline-block;
+  margin: 2%;
+}
+
+div.flip-3d figure {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s transform;
+  font-size: 1.6rem;
+  height: 40vh;
+  justify-content: center;
+  display: block;
+  padding-bottom: 25rem;
+  height: 15rem;
+}
+
+div.flip-3d figure img {
+  width: 100%;
+  padding-left: 5%;
+}
+
+div.flip-3d:hover figure {
+  transform: rotateY(.5turn);
+}
+
+div.flip-3d:hover figure figcaption {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  div#flip-3d {
+    perspective-origin: center;
+    height: 1rem;
+  }
+  div#flip-3d figure {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 12vw;
+    height: 4.5rem;
+  }
+  div#flip-3d figure:last-child {
+    height: 1rem;
+    display: none;
+  }
+}
+
+.background {
+  background-color: black;
+}
